@@ -16,6 +16,55 @@ const services = [
     badge: "Certificado",
   },
   {
+    icon: "⚡",
+    title: "Seguridad electrónica",
+    description:
+      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
+    badge: "Certificado",
+  },
+  {
+    icon: "⚡",
+    title: "Cableado estructurado",
+    description:
+      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
+    badge: "Certificado",
+  },
+  {
+    icon: "⚡",
+    title: "Domótica y automatización",
+    description:
+      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
+    badge: "Certificado",
+  },
+  {
+    icon: "⚡",
+    title: "Redes de fibra óptica",
+    description:
+      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
+    badge: "Certificado",
+  },
+  {
+    icon: "⚡",
+    title: "Controles de acceso",
+    description:
+      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
+    badge: "Certificado",
+  },
+  {
+    icon: "⚡",
+    title: "Video vigilancia analógica e IP",
+    description:
+      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
+    badge: "Certificado",
+  },
+  {
+    icon: "⚡",
+    title: "Monitoreo de racks y tableros eléctricos",
+    description:
+      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
+    badge: "Certificado",
+  },
+  {
     icon: "🛒",
     title: "Productos de calidad",
     description:
@@ -222,7 +271,7 @@ function Hero() {
             margin: "0 auto 40px",
           }}
         >
-          Más de 15 años de experiencia. Trabajos garantizados, materiales de
+          Más de 25 años de experiencia. Trabajos garantizados, materiales de
           calidad y atención personalizada para tu hogar o negocio.
         </p>
 
@@ -305,7 +354,7 @@ function Hero() {
           }}
         >
           {[
-            { value: "15+", label: "Años de experiencia" },
+            { value: "25+", label: "Años de experiencia" },
             { value: "500+", label: "Trabajos realizados" },
             { value: "24hs", label: "Urgencias" },
           ].map((stat) => (
