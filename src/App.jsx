@@ -1,77 +1,77 @@
 import { useState, useEffect } from "react";
+import LogoCarousel from "./components/carousel/carousel";
 
 const services = [
   {
     icon: "🔑",
     title: "Cerrajería",
     description:
-      "Apertura de puertas, cambio de cerraduras, copias de llaves y servicios de emergencia las 24hs.",
+      "Apertura de puertas, cambio de combinaciones, colocación de cerraduras y atención de emergencias.",
     badge: "Urgencias 24hs",
   },
   {
     icon: "⚡",
     title: "Electricidad domiciliaria",
     description:
-      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
-    badge: "Certificado",
+      "Instalaciones seguras, tableros principales, detección de cortocircuitos, luminarias y mantenimiento general.",
+    badge: "Matriculado", // "Matriculado" o "Certificado" le da mucha más confianza al cliente
   },
   {
-    icon: "⚡",
+    icon: "🛡️",
     title: "Seguridad electrónica",
     description:
-      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
-    badge: "Certificado",
+      "Sistemas de alarma perimetral, sensores de movimiento y protección integral para hogares y comercios.",
+    badge: "Protección",
   },
   {
-    icon: "⚡",
+    icon: "🌐",
     title: "Cableado estructurado",
     description:
-      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
-    badge: "Certificado",
+      "Diseño e instalación de redes de datos UTP/FTP. Soluciones de conectividad estables para oficinas y viviendas.",
+    badge: "Conectividad",
   },
   {
-    icon: "⚡",
+    icon: "🤖",
     title: "Domótica y automatización",
     description:
-      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
-    badge: "Certificado",
+      "Modernizá tu espacio controlando la iluminación, persianas y accesos directo desde tu celular o por voz.",
+    badge: "Smart Home",
   },
   {
-    icon: "⚡",
+    icon: "🧵", // O usa "📡" si te gusta más
     title: "Redes de fibra óptica",
     description:
-      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
-    badge: "Certificado",
+      "Tendido, fusión y certificación de enlaces de fibra óptica para máxima velocidad y ancho de banda.",
+    badge: "Alta Velocidad",
   },
   {
-    icon: "⚡",
+    icon: "🚪",
     title: "Controles de acceso",
     description:
-      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
-    badge: "Certificado",
+      "Sistemas biométricos, lectoras de tarjetas y cerraduras electromagnéticas para restringir accesos de forma segura.",
+    badge: "Control Eficiente",
   },
   {
-    icon: "⚡",
+    icon: "📹",
     title: "Video vigilancia analógica e IP",
     description:
-      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
-    badge: "Certificado",
+      "Instalación y configuración de cámaras de seguridad (CCTV) con monitoreo remoto en tiempo real desde móviles.",
+    badge: "Monitoreo HD",
   },
   {
-    icon: "⚡",
-    title: "Monitoreo de racks y tableros eléctricos",
+    icon: "🖥️",
+    title: "Monitoreo de racks y tableros",
     description:
-      "Instalaciones eléctricas, reparaciones, tableros, tomas corrientes, luminarias y más.",
-    badge: "Certificado",
+      "Ordenamiento de cableado en racks, mantenimiento de nodos de red y control térmico/eléctrico de infraestructura crítica.",
+    badge: "Soporte Técnico",
   },
   {
-    icon: "🛒",
+    icon: "🛠️", // Cambié el changuito por herramientas que va más con el rubro
     title: "Productos de calidad",
     description:
-      "Materiales eléctricos y de cerrajería de primeras marcas para garantizar durabilidad y seguridad.",
+      "Utilizamos materiales eléctricos, de red y cerrajería de primeras marcas para garantizar máxima durabilidad.",
     badge: "Garantía",
   },
-  // Podés agregar más servicios acá
 ];
 
 const phone = "2235366094";
@@ -271,7 +271,7 @@ function Hero() {
             margin: "0 auto 40px",
           }}
         >
-          Más de 25 años de experiencia. Trabajos garantizados, materiales de
+          Más de 15 años de experiencia. Trabajos garantizados, materiales de
           calidad y atención personalizada para tu hogar o negocio.
         </p>
 
@@ -354,7 +354,7 @@ function Hero() {
           }}
         >
           {[
-            { value: "25+", label: "Años de experiencia" },
+            { value: "15+", label: "Años de experiencia" },
             { value: "500+", label: "Trabajos realizados" },
             { value: "24hs", label: "Urgencias" },
           ].map((stat) => (
@@ -388,7 +388,7 @@ function Hero() {
   );
 }
 
-function ServiceCard({ service, index }) {
+function ServiceCard({ service }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -853,6 +853,7 @@ export default function App() {
       <NavBar scrolled={scrolled} />
       <Hero />
       <Services />
+      <LogoCarousel />
       <Zone />
       <Contact />
       <Footer />
