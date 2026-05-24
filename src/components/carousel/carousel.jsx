@@ -1,19 +1,29 @@
 import React from "react";
-import styles from "./carousel.css";
+import "./carousel.css";
+import logoA from "../../assets/brands/logoA.png";
+import logoB from "../../assets/brands/logob.jpg"; // Ojo que este es .jpg y tiene la 'b' minúscula
+import logoC from "../../assets/brands/logoC.png";
+import logoD from "../../assets/brands/logod.png";
+import logoE from "../../assets/brands/logoe.png";
+import logoF from "../../assets/brands/logof.png";
+import logoG from "../../assets/brands/logog.png";
+import logoH from "../../assets/brands/logoh.png";
+import logoI from "../../assets/brands/logoi.png";
+import logoJ from "../../assets/brands/logoj.png";
+import logoK from "../../assets/brands/logok.png";
 
 const logos = [
-  { name: "Marca A", url: "/assets/brands/logoA.png" },
-  { name: "Marca B", url: "/assets/brands/logob.jpg" },
-  { name: "Marca C", url: "/assets/brands/logoC.png" },
-  { name: "Marca D", url: "/assets/brands/logod.png" },
-  { name: "Marca E", url: "/assets/brands/logoe.png" },
-  { name: "Marca F", url: "/assets/brands/logof.png" },
-  { name: "Marca G", url: "/assets/brands/logog.png" },
-  { name: "Marca H", url: "/assets/brands/logoh.png" },
-  { name: "Marca I", url: "/assets/brands/logoi.webp" },
-  { name: "Marca I", url: "/assets/brands/logoi.png" },
-  { name: "Marca J", url: "/assets/brands/logoj.png" },
-  { name: "Marca K", url: "/assets/brands/logok.png" },
+  { name: "Marca A", url: logoA },
+  { name: "Marca B", url: logoB },
+  { name: "Marca C", url: logoC },
+  { name: "Marca D", url: logoD },
+  { name: "Marca E", url: logoE },
+  { name: "Marca F", url: logoF },
+  { name: "Marca G", url: logoG },
+  { name: "Marca H", url: logoH },
+  { name: "Marca I", url: logoI },
+  { name: "Marca J", url: logoJ },
+  { name: "Marca K", url: logoK },
 ];
 
 export default function LogoCarousel() {
