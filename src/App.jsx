@@ -271,7 +271,7 @@ function Hero() {
             margin: "0 auto 40px",
           }}
         >
-          Más de 15 años de experiencia. Trabajos garantizados, materiales de
+          Más de 25 años de experiencia. Trabajos garantizados, materiales de
           calidad y atención personalizada para tu hogar o negocio.
         </p>
 
@@ -354,7 +354,7 @@ function Hero() {
           }}
         >
           {[
-            { value: "15+", label: "Años de experiencia" },
+            { value: "25+", label: "Años de experiencia" },
             { value: "500+", label: "Trabajos realizados" },
             { value: "24hs", label: "Urgencias" },
           ].map((stat) => (

@@ -1,13 +1,47 @@
 .logo-section {
-    padding: 60px 0;
+    padding: 72px 0;
     text-align: center;
-    background-color: #f9f9f9;
+    background:
+        radial-gradient(circle at top, rgba(59, 130, 246, 0.24), transparent 38%),
+        linear-gradient(180deg, #14395f 0%, #0a2540 58%, #12385d 100%);
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
+    padding: 0 24px;
+}
+
+.logo-copy {
+    max-width: 720px;
+    margin: 0 auto 32px;
+}
+
+.logo-eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.logo-title {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.logo-description {
+    margin: 14px auto 0;
+    max-width: 620px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.82);
 }
 
 .logo-slider {
@@ -17,6 +51,28 @@
     display: grid;
     place-items: center;
     overflow: hidden;
+    padding: 22px 0;
+}
+
+.logo-slider::before,
+.logo-slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 120px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.logo-slider::before {
+    left: 0;
+    background: linear-gradient(90deg, #0f2f4e 0%, rgba(15, 47, 78, 0) 100%);
+}
+
+.logo-slider::after {
+    right: 0;
+    background: linear-gradient(270deg, #0f2f4e 0%, rgba(15, 47, 78, 0) 100%);
 }
 
 .logo-track {
@@ -41,16 +97,38 @@
     align-items: center;
     justify-content: center;
     margin: 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 18px 35px rgba(2, 12, 27, 0.22);
 }
 
 .logo-slide img {
     max-width: 100%;
     max-height: 80%;
     object-fit: contain;
-    opacity: 0.8;
-    transition: opacity 0.3s;
+    opacity: 0.82;
+    filter: grayscale(0.08);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .logo-slide img:hover {
     opacity: 1;
+    transform: scale(1.03);
+}
+
+@media (max-width: 640px) {
+    .logo-section {
+        padding: 56px 0;
+    }
+
+    .logo-slider::before,
+    .logo-slider::after {
+        width: 56px;
+    }
+
+    .logo-slide {
+        width: 170px;
+        margin: 0 14px;
+    }
 }

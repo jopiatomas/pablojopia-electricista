@@ -32,7 +32,14 @@ export default function LogoCarousel() {
   return (
     <section className="logo-section">
       <div className="container">
-        <h2>Trabajamos con las mejores marcas</h2>
+        <div className="logo-copy">
+          <span className="logo-eyebrow">Marcas de confianza</span>
+          <h2 className="logo-title">Trabajamos con las mejores marcas</h2>
+          <p className="logo-description">
+            Productos seleccionados por calidad, respaldo y rendimiento para
+            cada instalacion.
+          </p>
+        </div>
 
         <div className="logo-slider">
           <div className="logo-track">
