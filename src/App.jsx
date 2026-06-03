@@ -6,70 +6,70 @@ const services = [
     icon: "🔑",
     title: "Cerrajería",
     description:
-      "Apertura de puertas, cambio de combinaciones, colocación de cerraduras y atención de emergencias.",
+      "Apertura de puertas, cambio de combinaciones, colocación de cerraduras mecánicas y electrónicas.",
     badge: "Urgencias 24hs",
   },
   {
     icon: "⚡",
     title: "Electricidad domiciliaria",
     description:
-      "Instalaciones seguras, tableros principales, detección de cortocircuitos, luminarias y mantenimiento general.",
+      "Instalaciones domiciliarias e industriales, iluminación, tableros eléctricos, detección de cortocircuitos y mantenimiento.",
     badge: "Matriculado", // "Matriculado" o "Certificado" le da mucha más confianza al cliente
   },
   {
     icon: "🛡️",
     title: "Seguridad electrónica",
     description:
-      "Sistemas de alarma perimetral, sensores de movimiento y protección integral para hogares y comercios.",
+      "Todo tipo de sensores y protección integral para hogares, comercios y empresas.",
     badge: "Protección",
   },
   {
     icon: "🌐",
     title: "Cableado estructurado",
     description:
-      "Diseño e instalación de redes de datos UTP/FTP. Soluciones de conectividad estables para oficinas y viviendas.",
+      "Diseño e instalación de redes de datos IP. Soluciones de conectividad estables para oficinas, viviendas y organizaciones.",
     badge: "Conectividad",
   },
   {
     icon: "🤖",
     title: "Domótica y automatización",
     description:
-      "Modernizá tu espacio controlando la iluminación, persianas y accesos directo desde tu celular o por voz.",
+      "Diseño y automatización de iluminación y escenas inteligentes controladas desde dispositivos móviles o comandos de voz. ",
     badge: "Smart Home",
   },
   {
     icon: "🧵", // O usa "📡" si te gusta más
     title: "Redes de fibra óptica",
     description:
-      "Tendido, fusión y certificación de enlaces de fibra óptica para máxima velocidad y ancho de banda.",
+      "Diseño, tendido, fusión y certificación de enlaces de fibra óptica para máxima velocidad y ancho de banda.",
     badge: "Alta Velocidad",
   },
   {
     icon: "🚪",
     title: "Controles de acceso",
     description:
-      "Sistemas biométricos, lectoras de tarjetas y cerraduras electromagnéticas para restringir accesos de forma segura.",
+      "Sistemas biométricos, lectoras de tarjetas y cerraduras electromagnéticas con sistemas autónomos o monitoreados remotamente.",
     badge: "Control Eficiente",
   },
   {
     icon: "📹",
     title: "Video vigilancia analógica e IP",
     description:
-      "Instalación y configuración de cámaras de seguridad (CCTV) con monitoreo remoto en tiempo real desde móviles.",
+      "Instalación de cámaras de seguridad (CCTV) con monitoreo remoto en vivo y almacenamiento en la nube.",
     badge: "Monitoreo HD",
   },
   {
     icon: "🖥️",
     title: "Monitoreo de racks y tableros",
     description:
-      "Ordenamiento de cableado en racks, mantenimiento de nodos de red y control térmico/eléctrico de infraestructura crítica.",
+      "Organización, ruteo y mantenimiento de racks. Monitoreo térmico/eléctrico de infraestructura crítica.",
     badge: "Soporte Técnico",
   },
   {
     icon: "🛠️", // Cambié el changuito por herramientas que va más con el rubro
     title: "Productos de calidad",
     description:
-      "Utilizamos materiales eléctricos, de red y cerrajería de primeras marcas para garantizar máxima durabilidad.",
+      "Provisión y uso de materiales eléctricos, de red y cerrajería de primeras marcas para garantizar máxima durabilidad.",
     badge: "Garantía",
   },
 ];
