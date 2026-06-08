@@ -127,7 +127,7 @@ function NavBar({ scrolled }) {
               letterSpacing: "-0.3px",
             }}
           >
-            Pablo Jopia
+            Pablo Jopia - LJI Integración Tecnológica
           </span>
         </div>
         <nav style={{ display: "flex", gap: 28 }}>
@@ -315,32 +315,7 @@ function Hero() {
           >
             💬 WhatsApp
           </a>
-          <a
-            href={callLink}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 10,
-              background: "rgba(255,255,255,0.1)",
-              color: "#fff",
-              textDecoration: "none",
-              padding: "14px 28px",
-              borderRadius: 12,
-              fontFamily: "'Montserrat', sans-serif",
-              fontWeight: 700,
-              fontSize: 15,
-              border: "1px solid rgba(255,255,255,0.2)",
-              transition: "background 0.2s",
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.background = "rgba(255,255,255,0.18)")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.background = "rgba(255,255,255,0.1)")
-            }
-          >
-            📞 {phone}
-          </a>
+          
         </div>
 
         {/* Stats row */}
@@ -752,30 +727,7 @@ function Contact() {
           >
             💬 Escribir por WhatsApp
           </a>
-          <a
-            href={callLink}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 12,
-              background: "#1D4ED8",
-              color: "#fff",
-              textDecoration: "none",
-              padding: "16px 32px",
-              borderRadius: 14,
-              fontFamily: "'Montserrat', sans-serif",
-              fontWeight: 700,
-              fontSize: 16,
-              boxShadow: "0 4px 24px rgba(29,78,216,0.3)",
-              transition: "transform 0.2s",
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.transform = "scale(1.04)")
-            }
-            onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
-          >
-            📞 Llamar ahora
-          </a>
+          
         </div>
 
         <div
@@ -785,13 +737,7 @@ function Contact() {
             color: "rgba(255,255,255,0.4)",
           }}
         >
-          También podés escribirnos directamente al{" "}
-          <a
-            href={callLink}
-            style={{ color: "#60A5FA", textDecoration: "none" }}
-          >
-            {phone}
-          </a>
+          
         </div>
       </div>
     </section>
